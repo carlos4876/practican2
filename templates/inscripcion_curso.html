@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción en Curso</title>
+    <link rel="stylesheet" href="static/estilo_curso.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Inscripción en Curso</h1>
+        <form action="/inscripcion_curso" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso" required>
+                <option value="matematica">Matemática</option>
+                <option value="programacion">Programación</option>
+                <option value="ciberseguridad">Ciberseguridad</option>
+                <option value="base_datos">Base de Datos</option>
+                <option value="fisica">Física</option> 
+            </select>
+            
+            <input type="submit" value="Enviar">
+            <a href="/">Volver</a>
+
+        </form>
+
+    </div>
+</body>
+</html>
